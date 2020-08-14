@@ -45,7 +45,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     func textFieldDidEndEditing(_ textField: UITextField) {
         if let city = textField.text {
             weatherManager.fetchWeather(cityName: city)
-            cityLabel.text = city
+//            cityLabel.text = city
         }
         
         
