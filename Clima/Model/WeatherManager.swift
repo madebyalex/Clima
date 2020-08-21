@@ -45,9 +45,7 @@ struct WeatherManager {
         do {
             let decodedData = try decoder.decode(WeatherData.self, from: weatherData)
             
-            for list in decodedData.lists {
-                print(list.name)
-            }
+            print(decodedData.name)
             
         } catch {
             print(error)
