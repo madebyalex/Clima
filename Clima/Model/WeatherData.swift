@@ -8,22 +8,21 @@
 
 import Foundation
 
-struct WeatherData: Codable {
-    var name: String
-    
-    enum CodingKeys: String, CodingKey {
-        case name = "list"
-    }
-    
-    enum ListKeys: String, CodingKey {
-        case list
-    }
-    
-    init(from decoder: Decoder) throws {
-        let values = try decoder.container(keyedBy: CodingKeys.self)
-        
-        let list = try values.nestedContainer(keyedBy: ListKeys.self, forKey: .name)
-        name = try list.decode(String.self, forKey: .list)
+struct Main: Codable {
+    let temp: Double
+}
 
-   }
+struct Weather: Codable {
+    var main: String
+    var description: String
+}
+
+struct ListItem: Codable {
+    let name: String
+    let main: Main
+    let weather: [Weather]
+}
+
+struct WeatherData: Codable {
+    var list: [ListItem]
 }
