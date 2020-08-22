@@ -13,8 +13,9 @@ struct Main: Codable {
 }
 
 struct Weather: Codable {
-    var main: String
-    var description: String
+    let main: String
+    let description: String
+    let id: Int
 }
 
 struct ListItem: Codable {
@@ -24,5 +25,5 @@ struct ListItem: Codable {
 }
 
 struct WeatherData: Codable {
-    var list: [ListItem]
+    let list: [ListItem]
 }
