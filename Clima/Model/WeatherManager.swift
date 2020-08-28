@@ -31,7 +31,7 @@ struct WeatherManager {
     
     func performRequest(with urlString: String) {
         // 1. Create URL
-        if let url = URL(string: urlString) {
+        if let url = URL(string: urlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? " ") {
             
             // 2. Create a session
             let session = URLSession(configuration: .default)
@@ -42,6 +42,10 @@ struct WeatherManager {
                     self.delegate?.didFailWithError(error: error!)
                     return
                 }
+                
+                print((response as! HTTPURLResponse).statusCode)
+                
+//                let responseCode = (response as! HTTPURLResponse).statusCode
                 
                 if let safeData = data {
                     if let weather = self.parseJSON(safeData) {

@@ -62,13 +62,13 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="DzJ-t1-IFN" userLabel="Weather info">
-                                <rect key="frame" x="217.5" y="132" width="164.5" height="259.5"/>
+                                <rect key="frame" x="232.5" y="132" width="149.5" height="259.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Shf-JV-B4s">
-                                        <rect key="frame" x="0.0" y="0.0" width="164.5" height="217"/>
+                                        <rect key="frame" x="28.5" y="0.0" width="121" height="217"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud.rain" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="sbq-B7-wBe">
-                                                <rect key="frame" x="60.5" y="0.0" width="104" height="121.5"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.counterclockwise.icloud" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="sbq-B7-wBe">
+                                                <rect key="frame" x="17" y="1" width="104" height="116.5"/>
                                                 <color key="tintColor" name="dark"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="120" id="7jJ-Un-Ova"/>
@@ -76,16 +76,16 @@
                                                 </constraints>
                                             </imageView>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wop-Ve-f65">
-                                                <rect key="frame" x="0.0" y="124" width="164.5" height="93"/>
+                                                <rect key="frame" x="0.0" y="124" width="121" height="93"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3pY-BQ-w1P">
-                                                        <rect key="frame" x="0.0" y="0.0" width="88" height="93"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3pY-BQ-w1P">
+                                                        <rect key="frame" x="0.0" y="0.0" width="44.5" height="93"/>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="68"/>
                                                         <color key="textColor" name="dark"/>
                                                         <color key="highlightedColor" name="dark"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="°C" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gOd-pe-E0b">
-                                                        <rect key="frame" x="88" y="0.0" width="76.5" height="93"/>
+                                                        <rect key="frame" x="44.5" y="0.0" width="76.5" height="93"/>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="68"/>
                                                         <color key="textColor" name="dark"/>
                                                         <color key="highlightedColor" name="dark"/>
@@ -95,8 +95,8 @@
                                         </subviews>
                                         <variation key="heightClass=compact-widthClass=regular" alignment="center" axis="horizontal" spacing="12"/>
                                     </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Žablyak" textAlignment="right" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nak-RA-ifV">
-                                        <rect key="frame" x="66" y="221" width="98.5" height="38.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Searching..." textAlignment="right" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nak-RA-ifV">
+                                        <rect key="frame" x="0.0" y="221" width="149.5" height="38.5"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="28"/>
                                         <color key="textColor" name="dark"/>
                                         <color key="highlightedColor" name="dark"/>
@@ -143,7 +143,7 @@
     </scenes>
     <resources>
         <image name="Bg_01" width="252" height="500"/>
-        <image name="cloud.rain" catalog="system" width="128" height="125"/>
+        <image name="arrow.counterclockwise.icloud" catalog="system" width="128" height="88"/>
         <image name="location.circle" catalog="system" width="128" height="121"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <namedColor name="dark">
